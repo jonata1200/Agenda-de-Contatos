@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CadastrarUsuario">
+
+        <EditText
+            style="@style/EditTextForm"
+            android:id="@+id/editNome"
+            android:hint="@string/nome"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarCadastrarUsuario" />
+
+        <EditText
+            style="@style/EditTextForm"
+            android:id="@+id/editSobrenome"
+            android:hint="@string/sobrenome"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+        <EditText
+            android:id="@+id/editIdade"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:hint="@string/idade"
+            android:inputType="numberSigned"
+            android:maxLength="3"
+            android:padding="15dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editSobrenome" />
+
+        <EditText
+            style="@style/EditTextForm"
+            android:id="@+id/editCelular"
+            android:hint="@string/celular"
+            android:inputType="numberSigned"
+            android:maxLength="11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editIdade" />
+
+        <Button
+            style="@style/ButtonForm"
+            android:id="@+id/btSalvarNumero"
+            android:text="@string/salvar_numero"
+            app:cornerRadius="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editCelular" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarCadastrarUsuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/purple"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/back"
+            app:title="Cadastrar Usuário"
+            app:titleTextColor="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

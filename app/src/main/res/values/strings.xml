@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Agenda de Contatos (Kotlin)</string>
+    <string name="atualizar_numero">Atualizar Número</string>
+    <string name="celular">Celular</string>
+    <string name="idade">Idade</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="nome">Nome</string>
+    <string name="salvar_numero">Salvar Número</string>
+    <string name="cadastrar_um_numero">Cadastrar um Número</string>
+</resources>

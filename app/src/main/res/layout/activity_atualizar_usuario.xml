@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtualizarUsuario">
+
+    <EditText
+        style="@style/EditTextForm"
+        android:id="@+id/atualizarNome"
+        android:hint="@string/nome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAtualizarUsuario" />
+
+    <EditText
+        style="@style/EditTextForm"
+        android:id="@+id/atualizarSobrenome"
+        android:hint="@string/sobrenome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atualizarNome" />
+
+    <EditText
+        android:id="@+id/atualizarIdade"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="@string/idade"
+        android:inputType="numberSigned"
+        android:maxLength="3"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atualizarSobrenome" />
+
+    <EditText
+        style="@style/EditTextForm"
+        android:id="@+id/atualizarCelular"
+        android:hint="@string/celular"
+        android:inputType="numberSigned"
+        android:maxLength="11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atualizarIdade" />
+
+    <Button
+        style="@style/ButtonForm"
+        android:id="@+id/btAtualizarNumero"
+        android:text="@string/atualizar_numero"
+        app:cornerRadius="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atualizarCelular" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAtualizarUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/back"
+        app:title="Atualizar Usuário"
+        app:titleTextColor="@color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
